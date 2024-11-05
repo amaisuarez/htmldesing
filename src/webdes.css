@@ -1,0 +1,28 @@
+.img{
+    border-radius: 15%;
+    border: 2px solid yellow;
+    transform: rotate(4deg);
+    box-shadow: 3px 3px 4px black;
+
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.img2{
+
+
+}
+
+figcaption{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    
+
+}
+
+body {
+    color: black;
+}
