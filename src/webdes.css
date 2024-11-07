@@ -25,7 +25,7 @@ body {
 
 .content {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 20px;
     gap: 20px; 
 }
@@ -40,9 +40,10 @@ body {
 }
 
 .img2 {
-    width: 190%; 
+    width: 200%; 
     margin-bottom: 15px;
     margin-right: 45px;
+    
 }
 
 .text-column {
@@ -63,31 +64,55 @@ body {
 
 p {
     text-align: justify;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
+   
 }
 
 
 h2 {
     margin-top: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: aquamarine;
+    border: 2px solid black;
+    background-color: #2c2a2a;
+}
+.quote {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #555;
+    border-left: 5px solid #ddd;
+    margin: 20px 20px 20px 0; 
+    padding-left: 10px; 
+    float: left; 
+    width: 100%; 
+    
 }
 
 
 footer{
     background-color: aquamarine;
     color: black;
-    text-align:center;
     padding: auto;
     position: relative;
-  
 }
 
+
+
+/*for devices with less 800px*/
 @media (max-width: 800px) {
+    
     .content {
         flex-direction: column;  
         align-items: center;  
     }
 
+    .img {
+        border-radius: 12%;
+        border: 2px solid black;
+        transform: rotate(4deg);
+        box-shadow: 3px 3px 4px black;
+    }
     .text-container {
         flex: 1;
         max-width: 100%;
@@ -97,16 +122,25 @@ footer{
     .gallery{
         width: 35%;  
         margin-top: 20px; 
-        margin-right: 330px;
-        margin-left: auto;
+        margin-right: 395px;
+        margin-left: 300px;
         order: 2;
     }
 
     .figcaption{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: large;
+        text-align: center;
     }
     .footer{
         text-align: center;
+        margin-right: 250px;
+        margin-left: 300px;
     }
+    .quote {
+        width: auto; 
+        margin: 0;
+        clear: both; 
+    }
+    
 }
